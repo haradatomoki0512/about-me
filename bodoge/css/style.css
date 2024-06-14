@@ -1,0 +1,137 @@
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+header {
+    font-weight: 700;
+}
+
+header .con {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+header .logo {
+    font-size: 34px;
+}
+
+header ul {
+    display: flex;
+}
+header ul li {
+    margin-left:  30px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.let1 {
+    background-image: url(../images/datachef_unicolor.png);
+    background-position: center bottom;
+    background-size: cover;
+    height: 750px;
+    display: flex;
+    align-items: center;
+}
+.let1 .con {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align:left;
+    z-index: 2;
+    position: relative;
+    color: #ffffff;
+}
+
+.midasi {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+}
+.usui {
+    font-size: 28px;
+    font-size: 400;
+    margin-bottom: 40px;
+
+}
+.text {
+    font-size: 26px;
+    font-weight: 400;
+}
+.yoko {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 900px;
+    font-size: 24px;
+}
+.yoko dt {
+    width: 200px;
+    padding: 5px;
+    font-weight: 500;
+}
+.yoko dd {
+    width: 700px;
+    padding: 5px;
+}
+.flex {
+    display: flex; /*横並び*/
+  }
+  .flex .right {
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
+
+  .flex .text {
+    margin: 10px 0 0;
+    padding: 0;
+  }
+  .info{
+    width: 100%;
+    max-width: 544px;
+    margin: auto;
+    padding: 0 1.5rem;
+    border-spacing: 0;
+}
+
+.info th,
+.info td {
+    border-bottom: 1px solid #c9c2bc;
+
+}
+
+.info th {
+    text-align: left;
+    font-weight:  normal;
+    padding: 1rem;
+}
+
+.info td {
+    padding: 1rem 0;
+}
+
+.heading-large {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.kami li a {
+    transition: .3s;
+}
+
+.kami li a:hover {
+    color: #a0d8ef;
+    transition: .3s;
+}
+.aida {
+    margin-bottom: 20px;
+}

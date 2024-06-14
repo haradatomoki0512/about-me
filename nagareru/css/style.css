@@ -1,0 +1,47 @@
+HTML CSSResult Skip Results Iframe
+EDIT ON
+.anime{
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  background-size: cover;
+  background-position: center center;
+  
+  animation: image-switch-animation 15s infinite;
+}
+
+.img:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.img:nth-of-type(2) {
+  animation-delay: 5s;
+}
+.img:nth-of-type(3) {
+  animation-delay: 10s;
+}
+.image:nth-of-type(4) {
+    animation-delay: 15s;
+  }
+  .image:nth-of-type(5) {
+    animation-delay: 20s;
+  }
+
+
+@keyframes image-switch-animation {
+  0%{ opacity: 0;}
+  10%{ opacity: 1;}
+  20%{ opacity: 1;}
+  30%{ opacity: 1;}
+  40%{ opacity: 0;}
+  100%{ opacity: 0;}
+}
+
