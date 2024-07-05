@@ -1,240 +1,287 @@
-html {
+/* Base Styles (Mobile-First) */
 
-
-.pop{
-      .poppins-regular {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      
-      .poppins-medium {
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-      }
-      
-      .poppins-bold {
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-      }
-      
-}
-
-
-.nihon {
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-
-}
-.container {
-    width: 90%;
-    max-width: 1120px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.flex{
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    align-items: center;
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    padding: 27px 0;
+    font-weight: 700;
+    background: #f8f8f8; /* Adding a background color for better visibility */
+    padding: 10px 0;
 }
 
-.logo {
-    font-size:  30px;
-    font-weight: 700; 
-    letter-spacing: -0.04em;
+header .con {
+    width: 90%;
+    margin: 0 auto;
 }
 
-.logo span{
-    color: #80ba4a;
-}
-
-.header_menu li {
-    margin-left: 40px;
-}
-
-.header_menu li a {
-    transition: .3s;
-}
-
-.header_menu li a:hover {
-    color: #80ba4a;
-    transition: .3s;
-}
-
-/*　メイン */
-#hero {
-    background-image: url(../images/main.avif);
-    background-position:center;
-    background-size: cover;
-    height: 540px;
-    border-radius: 30px;
+header .row {
     display: flex;
-    align-items:center;
-    margin-bottom: 90px;
-    overflow: hidden;
-}
-#hero::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.2;
-    z-index: 1;
-}
-
-.hero_inner {
-    z-index: 2;
-    color: #ffffff;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-.hero_inner p {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 16px;
-}
-.hero_inner h1 {
+header .logo {
     font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
-/* コンセプト */
-#concept {
-    margin-bottom: 120px;
+header ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
 }
-.title {
-    font-size: 20px;
-    font-weight: 500;
-    color: #80ba4a;
-    margin-bottom: 60px;
+
+header ul li {
+    margin: 5px 0;
+    font-size: 23px;
 }
-#concept h3 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 60px;
+
+header ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: .3s;
 }
-.column-2 {
-    width: 48%;
+
+header ul li a:hover {
+    color: #a0d8ef;
 }
-.text {
-    line-height: 2
-    ;
+
+.main-content {
+    padding: 20px;
 }
-.concept-img {
-    background-image: url(../images/p1.avif);
-    background-position:center;
-    background-size: cover;
-    height: 340px;
-    border-radius: 20px;
+.supesu {
+    margin-left: 300px;
 }
-.heading {
-    font-family:'Dancing Script', cursive;
-    font-size: 200px;
-    font-weight: 700;
-    color:#80ba4a;
-    opacity: 0.1;
+
+.let1 {
+    background-image: url(../images/datachef_unicolor.png);
+    background-position: center bottom;
+    background-size: 100px;
+    padding: 20px 0;
+    color: #ffffff;
+    position: relative;
+    min-height: 650px;
+}
+
+.let1 .con {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anime {
+    width: 100%;
+    height: 650px; /* Match the height of the background */
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.img {
     position: absolute;
     top: 0;
-    right: 0;
-    transform:translateY(-30%)
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    width: auto;
+    height: 100%;
+    animation: image-switch-animation 15s infinite;
 }
 
-/*サービス*/
-#service {
-    margin-bottom: 120px;
+.img img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
 }
-.service_inner {
-    margin-bottom: 40px;
-    position: relative;
+
+.img:nth-of-type(1) {
+    animation-delay: 0s;
 }
-.column-40 {
-    width: 40%;
+.img:nth-of-type(2) {
+    animation-delay: 5s;
 }
-.column-55 {
-    width: 55%;
+.img:nth-of-type(3) {
+    animation-delay: 10s;
 }
-#service img {
-    border-radius: 20px;
+
+.zurasu {
+    margin: 0;
 }
-#service h3 {
-    font-size: 24px;
+
+.midasi {
+    font-size: 36px;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin-bottom: 5px;
 }
 
-/*概要*/
-#outline {
-    margin-bottom: 120px;
-}
-#outline dl {
-    max-width: 900px;
-    margin-left: auto;
-}
-#outline dt {
-    width: 30%;
-    padding: 48px 0;
-    font-weight: 500;
-    border-bottom: solid 1px #d2ecba;
-}
-#outline dd {
-    width: 70%;
-    padding: 48px 0;
-    border-bottom: solid 1px #d2ecba;
-
+.usui {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
-/*ぼとむ*/
-.column-a {
-    background-image: url(../images/1.avif);
-    background-position:center;
-    background-size: cover;
-    width: 24%;
-    height: 270px;
-    border-radius: 20px;
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
-.column-b {
-    background-image: url(../images/2.avif);
-    background-position:center;
-    background-size: cover;
-    width: 24%;
-    height: 270px;
-    border-radius: 20px;
-}
-.column-c {
-    background-image: url(../images/3.avif);
-    background-position:center;
-    background-size: cover;
-    width: 24%;
-    height: 270px;
-    border-radius: 20px;
-}
-.column-d {
-    background-image: url(../images/4.avif);
-    background-position:center;
-    background-size: cover;
-    width: 24%;
-    height: 270px;
-    border-radius: 20px;
+
+iframe {
+    width: 100%;
+    height: auto;
 }
 
 footer {
+    padding: 20px 0;
+    background: #f8f8f8;
     text-align: center;
-    margin: 90px 0;
+}
+
+.heading-large {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.info {
+    width: 90%;
+    margin: auto;
+    border-spacing: 0;
+    font-size: 14px;
+}
+
+.info th,
+.info td {
+    border-bottom: 1px solid #c9c2bc;
+    padding: 0.5rem;
+}
+
+/* Styles for Larger Screens */
+
+@media (min-width: 600px) {
+
+    header .row {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header .logo {
+        font-size: 34px;
+        margin: 0;
+    }
+
+    header ul {
+        flex-direction: row;
+    }
+
+    header ul li {
+        margin-left: 30px;
+    }
+
+    .let1 {
+        padding: 40px 0;
+    }
+
+    .flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .anime {
+        width: 60%; /* Adjusted for larger screens */
+        height: 650px; /* Match the height of the background */
+    }
+
+    .zurasu {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    iframe {
+        width: 390px;
+        height: 219px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .let1 {
+        padding: 60px 0;
+        min-height: 950px; /* Ensure the section is tall enough to fit the images */
+    }
+
+    .flex {
+        max-width: 108
+        0px;
+        margin: 0 auto;
+    }
+
+    .anime {
+        width: 500px; /* Further adjusted for larger screens */
+        height: 950px; /* Match the height of the background */
+    }
+
+    .img {
+        width: auto;
+        height: 100%;
+        top: 0;
+    }
+
+    .midasi {
+        font-size: 60px;
+    }
+
+    .usui {
+        font-size: 28px;
+    }
+
+    .text {
+        font-size: 26px;
+    }
+
+    .zurasu {
+        margin-left: 155px;
+    }
+
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+
+    footer {
+        padding: 40px 0;
+    }
+
+    .heading-large {
+        font-size: 3rem;
+    }
+
+    .info {
+        max-width: 544px;
+        font-size: 16px;
+    }
+}
+
+/* Image Switch Animation */
+
+@keyframes image-switch-animation {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    20% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
 }

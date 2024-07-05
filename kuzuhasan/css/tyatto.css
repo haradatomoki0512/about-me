@@ -8,7 +8,7 @@ body {
 
 header {
     font-weight: 700;
-    background: #f8f8f8; /* Adding a background color for better visibility */
+    background: #f8f8f8;
     padding: 10px 0;
 }
 
@@ -25,7 +25,7 @@ header .row {
 }
 
 header .logo {
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
@@ -38,7 +38,7 @@ header ul {
 
 header ul li {
     margin: 5px 0;
-    font-size: 18px;
+    font-size: 23px;
 }
 
 header ul li a {
@@ -53,6 +53,9 @@ header ul li a:hover {
 
 .main-content {
     padding: 20px;
+}
+.supesu {
+    margin-left: 300px;
 }
 
 .let1 {
@@ -79,30 +82,26 @@ header ul li a:hover {
 
 .anime {
     width: 100%;
-    height: 100%; /* Allow the container to grow based on its content */
+    height: 650px; /* Match the height of the background */
     position: relative;
     margin-bottom: 20px;
 }
 
 .img {
     position: absolute;
-    top: 50%; /* Move images lower */
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -42%);
+    transform: translateX(-50%);
     opacity: 0;
-    background-size: cover;
-    background-position: center center;
-    overflow: hidden;
-    width: 300px; /* Increased width for larger images */
-    height: 400px; /* Increased height for larger images */
+    width: auto;
+    height: 100%;
     animation: image-switch-animation 15s infinite;
 }
 
 .img img {
-    width: 100%;
+    width: auto;
     height: 100%;
-    display: block;
-    object-fit:cover ;
+    object-fit: cover;
 }
 
 .img:nth-of-type(1) {
@@ -199,6 +198,7 @@ footer {
 
     .anime {
         width: 60%; /* Adjusted for larger screens */
+        height: 650px; /* Match the height of the background */
     }
 
     .zurasu {
@@ -224,19 +224,20 @@ footer {
     }
 
     .flex {
-        max-width: 1080px;
+        max-width: 108
+        0px;
         margin: 0 auto;
     }
 
     .anime {
         width: 500px; /* Further adjusted for larger screens */
-        height: 100%; /* Allow the container to grow based on its content */
+        height: 950px; /* Match the height of the background */
     }
 
     .img {
-        width: 500px; /* Further increased width */
-        height: 600px; /* Further increased height */
-        top: 50%; /* Move images lower */
+        width: auto;
+        height: 100%;
+        top: 0;
     }
 
     .midasi {

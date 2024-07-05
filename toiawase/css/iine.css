@@ -1,0 +1,68 @@
+html{
+    box-sizing: border-box;
+}
+
+.hako {
+    width: 900px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.midasi {
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.hidari{
+    border: 1px solid #a9a9a9 ;
+    text-align: center;
+    font-size: 25px;
+    width: 30%;
+    padding: 20px;
+    background-color: #eee;
+}
+.migi{
+    border: 1px solid #a9a9a9 ;
+    font-size: 20px;
+    width: 70%;
+    padding: 20px;
+}
+.form-text {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #a9a9a9;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: 400px;
+  }
+  .form-textarea {
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #a9a9a9;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .contact-submit {
+    width: 250px;
+    background-color: #333; 
+    color: #fff;
+    font-weight: bold; 
+    display: block; 
+    margin: 0 auto; 
+    font-size: 16px; 
+    padding: 15px; 
+    border-radius: 100vh; 
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+  }
