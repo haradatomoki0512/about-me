@@ -54,9 +54,6 @@ header ul li a:hover {
 .main-content {
     padding: 20px;
 }
-.supesu {
-    margin-left: 300px;
-}
 
 .let1 {
     background-image: url(../images/datachef_unicolor.png);
@@ -88,30 +85,15 @@ header ul li a:hover {
 }
 
 .img {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
     width: auto;
     height: 100%;
-    animation: image-switch-animation 15s infinite;
+    object-fit: cover;
 }
 
 .img img {
     width: auto;
     height: 100%;
     object-fit: cover;
-}
-
-.img:nth-of-type(1) {
-    animation-delay: 0s;
-}
-.img:nth-of-type(2) {
-    animation-delay: 5s;
-}
-.img:nth-of-type(3) {
-    animation-delay: 10s;
 }
 
 .zurasu {
@@ -224,8 +206,8 @@ footer {
     }
 
     .flex {
-        max-width: 108
-        0px;
+        
+        max-width: 1080px;
         margin: 0 auto;
     }
 
@@ -235,6 +217,7 @@ footer {
     }
 
     .img {
+        
         width: auto;
         height: 100%;
         top: 0;

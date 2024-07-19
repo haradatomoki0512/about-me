@@ -1,4 +1,8 @@
-/* Base Styles (Mobile-First) */
+
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Zen Kaku Gothic New', sans-serif;
@@ -82,7 +86,7 @@ header ul li a:hover {
 
 .anime {
     width: 100%;
-    height: 650px; /* Match the height of the background */
+    height: 650px; 
     position: relative;
     margin-bottom: 20px;
 }
@@ -197,8 +201,8 @@ footer {
     }
 
     .anime {
-        width: 60%; /* Adjusted for larger screens */
-        height: 650px; /* Match the height of the background */
+        width: 60%; 
+        height: 650px; 
     }
 
     .zurasu {
@@ -220,7 +224,7 @@ footer {
 
     .let1 {
         padding: 60px 0;
-        min-height: 950px; /* Ensure the section is tall enough to fit the images */
+        min-height: 950px; 
     }
 
     .flex {
@@ -230,8 +234,8 @@ footer {
     }
 
     .anime {
-        width: 500px; /* Further adjusted for larger screens */
-        height: 950px; /* Match the height of the background */
+        width: 500px; 
+        height: 950px;
     }
 
     .img {
@@ -275,7 +279,6 @@ footer {
     }
 }
 
-/* Image Switch Animation */
 
 @keyframes image-switch-animation {
     0% { opacity: 0; }

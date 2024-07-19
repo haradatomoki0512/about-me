@@ -1,5 +1,6 @@
-/* Base Styles (Mobile-First) */
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     margin: 0;
