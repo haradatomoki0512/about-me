@@ -1,68 +1,74 @@
-html{
+html {
     box-sizing: border-box;
 }
 
-.hako {
-    width: 900px;
-    margin: 0 auto;
-    padding: 60px 0;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
-.midasi {
-    font-size: 50px;
-    margin-bottom: 50px;
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
     text-align: center;
+    color: #333;
 }
-.box {
-    width: 100%;
+
+.form-group {
     margin-bottom: 20px;
 }
-.hidari{
-    border: 1px solid #a9a9a9 ;
-    text-align: center;
-    font-size: 25px;
-    width: 30%;
-    padding: 20px;
-    background-color: #eee;
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #666;
 }
-.migi{
-    border: 1px solid #a9a9a9 ;
-    font-size: 20px;
-    width: 70%;
-    padding: 20px;
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
 }
-.form-text {
+
+.form-input {
+    font-size: 1em;
+}
+
+.form-textarea {
+    font-size: 1em;
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
     width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #a9a9a9;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    max-width: 400px;
-  }
-  .form-textarea {
-    width: 100%;
-    padding: 10px;
-    height: 200px;
-    border-radius: 5px;
-    border: 1px solid #a9a9a9;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  .contact-submit {
-    width: 250px;
-    background-color: #333; 
-    color: #fff;
-    font-weight: bold; 
-    display: block; 
-    margin: 0 auto; 
-    font-size: 16px; 
-    padding: 15px; 
-    border-radius: 100vh; 
+    padding: 15px;
     border: none;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
     cursor: pointer;
-  }
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}

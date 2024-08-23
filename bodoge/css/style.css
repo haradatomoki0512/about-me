@@ -1,5 +1,9 @@
 /* Base Styles (Mobile-First) */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     margin: 0;
@@ -22,6 +26,7 @@ header .row {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 header .logo {
@@ -57,7 +62,9 @@ header ul li a:hover {
 }
 
 .supesu {
-    margin: 0 auto; /* Center the content */
+    margin: 0 auto; /* Center the content horizontally */
+    display: flex;
+    justify-content: center; /* Center horizontally */
 }
 
 .let1 {
@@ -68,7 +75,9 @@ header ul li a:hover {
     color: #ffffff;
     position: relative;
     min-height: 650px;
-    margin-bottom: 40px; /* Add space below the section */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
 }
 
 .let1 .con {
@@ -85,24 +94,19 @@ header ul li a:hover {
 
 .anime {
     width: 100%;
-    height: auto; /* Adjust height to fit content */
+    height: 650px; /* Match the height of the background */
     position: relative;
-    margin-bottom: 10px; /* Reduced margin to move up */
-    max-width: 80%; /* Adjusted to make image smaller */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .img {
-    position: relative; /* Changed from absolute */
-    margin: 0 auto; /* Center the image */
     width: 100%;
-    height: auto; /* Ensure images scale correctly */
-    max-width: 100%; /* Ensure images do not exceed container */
-}
-
-.img img {
-    width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+    /* Removed animation */
 }
 
 .zurasu {
@@ -165,6 +169,11 @@ footer {
         justify-content: space-between;
     }
 
+    header .logo {
+        font-size: 34px;
+        margin: 0;
+    }
+
     header ul {
         flex-direction: row;
     }
@@ -175,7 +184,6 @@ footer {
 
     .let1 {
         padding: 40px 0;
-        margin-bottom: 50px; /* Adjust margin for larger screens */
     }
 
     .flex {
@@ -185,8 +193,7 @@ footer {
 
     .anime {
         width: 60%; /* Adjusted for larger screens */
-        height: auto; /* Ensure images scale correctly */
-        margin-bottom: 20px; /* Adjust margin */
+        height: 650px; /* Match the height of the background */
     }
 
     .zurasu {
@@ -209,7 +216,6 @@ footer {
     .let1 {
         padding: 60px 0;
         min-height: 950px; /* Ensure the section is tall enough to fit the images */
-        margin-bottom: 60px; /* Increased margin */
     }
 
     .flex {
@@ -218,9 +224,8 @@ footer {
     }
 
     .anime {
-        width: 50%; /* Further adjusted for larger screens */
-        height: auto; /* Ensure images scale correctly */
-        margin-bottom: 30px; /* Adjust margin */
+        width: 400px; /* Further adjusted for larger screens */
+        height: 750px; /* Match the height of the background */
     }
 
     .midasi {
@@ -256,15 +261,4 @@ footer {
         max-width: 544px;
         font-size: 16px;
     }
-}
-
-/* Image Switch Animation */
-
-@keyframes image-switch-animation {
-    0% { opacity: 0; }
-    10% { opacity: 1; }
-    20% { opacity: 1; }
-    30% { opacity: 1; }
-    40% { opacity: 0; }
-    100% { opacity: 0; }
 }
