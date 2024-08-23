@@ -257,14 +257,3 @@ footer {
         font-size: 16px;
     }
 }
-
-/* Image Switch Animation */
-
-@keyframes image-switch-animation {
-    0% { opacity: 0; }
-    10% { opacity: 1; }
-    20% { opacity: 1; }
-    30% { opacity: 1; }
-    40% { opacity: 0; }
-    100% { opacity: 0; }
-}
