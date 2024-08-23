@@ -1,9 +1,5 @@
 /* Base Styles (Mobile-First) */
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     margin: 0;
@@ -12,7 +8,7 @@ body {
 
 header {
     font-weight: 700;
-    background: #f8f8f8; /* Background color for visibility */
+    background: #f8f8f8; /* Adding a background color for better visibility */
     padding: 10px 0;
     text-align: center; /* Center the text in the header */
 }
@@ -42,7 +38,7 @@ header ul {
 }
 
 header ul li {
-    margin: 10px 0; /* Increased margin for better spacing */
+    margin: 5px 0;
     font-size: 23px;
 }
 
@@ -89,46 +85,46 @@ header ul li a:hover {
 
 .anime {
     width: 100%;
-    height: 650px; /* Adjust as needed */
+    height: auto; /* Adjust height to fit content */
     position: relative;
-    margin-bottom: 30px; /* Increased margin for spacing below */
+    margin-bottom: 10px; /* Reduced margin to move up */
+    max-width: 80%; /* Adjusted to make image smaller */
 }
 
 .img {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%) scale(0.8); /* Scale down the image to 80% */
+    position: relative; /* Changed from absolute */
+    margin: 0 auto; /* Center the image */
     width: 100%;
-    height: auto; /* Adjust height automatically to maintain aspect ratio */
+    height: auto; /* Ensure images scale correctly */
+    max-width: 100%; /* Ensure images do not exceed container */
 }
 
 .img img {
     width: 100%;
-    height: auto; /* Adjust height automatically to maintain aspect ratio */
+    height: auto;
     object-fit: cover;
 }
 
 .zurasu {
-    margin: 20px 0; /* Added margin for spacing around zurasu */
+    margin: 0;
 }
 
 .midasi {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 10px; /* Increased margin below heading */
+    margin-bottom: 5px;
 }
 
 .usui {
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 30px; /* Increased margin below subheading */
+    margin-bottom: 20px;
 }
 
 .text {
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 30px; /* Increased margin below text */
+    margin-bottom: 20px;
 }
 
 iframe {
@@ -169,11 +165,6 @@ footer {
         justify-content: space-between;
     }
 
-    header .logo {
-        font-size: 34px;
-        margin: 0;
-    }
-
     header ul {
         flex-direction: row;
     }
@@ -194,8 +185,8 @@ footer {
 
     .anime {
         width: 60%; /* Adjusted for larger screens */
-        height: auto; /* Adjust height automatically */
-        margin-bottom: 40px; /* Increased margin for larger screens */
+        height: auto; /* Ensure images scale correctly */
+        margin-bottom: 20px; /* Adjust margin */
     }
 
     .zurasu {
@@ -227,14 +218,9 @@ footer {
     }
 
     .anime {
-        width: 660px; /* Increased width by 130px for larger screens */
-        height: auto; /* Adjust height automatically */
-        margin-bottom: 50px; /* Increased margin to create space below */
-    }
-
-    .img {
-        transform: translateX(-50%) scale(1); /* Scale to 100% (no scaling) for larger screens */
-        width: 100%; /* Ensure it covers the parent */
+        width: 50%; /* Further adjusted for larger screens */
+        height: auto; /* Ensure images scale correctly */
+        margin-bottom: 30px; /* Adjust margin */
     }
 
     .midasi {
@@ -270,4 +256,15 @@ footer {
         max-width: 544px;
         font-size: 16px;
     }
+}
+
+/* Image Switch Animation */
+
+@keyframes image-switch-animation {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    20% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
 }
