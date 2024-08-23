@@ -1,6 +1,9 @@
+/* Base Styles (Mobile-First) */
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     margin: 0;
@@ -9,8 +12,9 @@ body {
 
 header {
     font-weight: 700;
-    background: #f8f8f8; /* Adding a background color for better visibility */
+    background: #f8f8f8; /* Background color for visibility */
     padding: 10px 0;
+    text-align: center; /* Center the text in the header */
 }
 
 header .con {
@@ -22,7 +26,6 @@ header .row {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 header .logo {
@@ -32,13 +35,14 @@ header .logo {
 
 header ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack items vertically on mobile */
     padding: 0;
     list-style: none;
+    margin: 0;
 }
 
 header ul li {
-    margin: 5px 0;
+    margin: 10px 0; /* Increased margin for better spacing */
     font-size: 23px;
 }
 
@@ -55,8 +59,9 @@ header ul li a:hover {
 .main-content {
     padding: 20px;
 }
+
 .supesu {
-    margin-left: 300px;
+    margin: 0 auto; /* Center the content */
 }
 
 .let1 {
@@ -67,6 +72,7 @@ header ul li a:hover {
     color: #ffffff;
     position: relative;
     min-height: 650px;
+    margin-bottom: 40px; /* Add space below the section */
 }
 
 .let1 .con {
@@ -83,66 +89,46 @@ header ul li a:hover {
 
 .anime {
     width: 100%;
-    height: 650px; /* Match the height of the background */
+    height: 650px; /* Adjust as needed */
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Increased margin for spacing below */
 }
 
 .img {
-    width: auto;
-    height: 60%;
-    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8); /* Scale down the image to 80% */
+    width: 100%;
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
 }
 
 .img img {
-    width: auto;
-    height: 90%;
+    width: 100%;
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
     object-fit: cover;
-    margin-top: 20px;
-}
-.sita {
-    width: 600px;
-    height: 450px;
-    margin-top: 20px; 
-    margin-left: 300px;
-}
-
-.sita img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-}
-
-.img:nth-of-type(1) {
-    animation-delay: 0s;
-}
-.img:nth-of-type(2) {
-    animation-delay: 5s;
-}
-.img:nth-of-type(3) {
-    animation-delay: 10s;
 }
 
 .zurasu {
-    margin: 0;
+    margin: 20px 0; /* Added margin for spacing around zurasu */
 }
 
 .midasi {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 10px; /* Increased margin below heading */
 }
 
 .usui {
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Increased margin below subheading */
 }
 
 .text {
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Increased margin below text */
 }
 
 iframe {
@@ -198,6 +184,7 @@ footer {
 
     .let1 {
         padding: 40px 0;
+        margin-bottom: 50px; /* Adjust margin for larger screens */
     }
 
     .flex {
@@ -207,7 +194,8 @@ footer {
 
     .anime {
         width: 60%; /* Adjusted for larger screens */
-        height: 650px; /* Match the height of the background */
+        height: auto; /* Adjust height automatically */
+        margin-bottom: 40px; /* Increased margin for larger screens */
     }
 
     .zurasu {
@@ -230,23 +218,23 @@ footer {
     .let1 {
         padding: 60px 0;
         min-height: 950px; /* Ensure the section is tall enough to fit the images */
+        margin-bottom: 60px; /* Increased margin */
     }
 
     .flex {
-        max-width: 108
-        0px;
+        max-width: 1080px;
         margin: 0 auto;
     }
 
     .anime {
-        width: 500px; /* Further adjusted for larger screens */
-        height: 950px; /* Match the height of the background */
+        width: 660px; /* Increased width by 130px for larger screens */
+        height: auto; /* Adjust height automatically */
+        margin-bottom: 50px; /* Increased margin to create space below */
     }
 
     .img {
-        width: auto;
-        height: 100%;
-        top: 0;
+        transform: translateX(-50%) scale(1); /* Scale to 100% (no scaling) for larger screens */
+        width: 100%; /* Ensure it covers the parent */
     }
 
     .midasi {
@@ -282,15 +270,4 @@ footer {
         max-width: 544px;
         font-size: 16px;
     }
-}
-
-/* Image Switch Animation */
-
-@keyframes image-switch-animation {
-    0% { opacity: 0; }
-    10% { opacity: 1; }
-    20% { opacity: 1; }
-    30% { opacity: 1; }
-    40% { opacity: 0; }
-    100% { opacity: 0; }
 }

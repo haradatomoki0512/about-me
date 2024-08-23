@@ -1,6 +1,9 @@
+/* Base Styles (Mobile-First) */
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     margin: 0;
@@ -9,8 +12,9 @@ body {
 
 header {
     font-weight: 700;
-    background: #f8f8f8; 
+    background: #f8f8f8; /* Background color for visibility */
     padding: 10px 0;
+    text-align: center; /* Center the text in the header */
 }
 
 header .con {
@@ -22,7 +26,6 @@ header .row {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 header .logo {
@@ -32,9 +35,10 @@ header .logo {
 
 header ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack items vertically on mobile */
     padding: 0;
     list-style: none;
+    margin: 0;
 }
 
 header ul li {
@@ -55,8 +59,9 @@ header ul li a:hover {
 .main-content {
     padding: 20px;
 }
+
 .supesu {
-    margin-left: 300px;
+    margin: 0 auto; /* Center the content */
 }
 
 .let1 {
@@ -67,6 +72,7 @@ header ul li a:hover {
     color: #ffffff;
     position: relative;
     min-height: 650px;
+    margin-bottom: 40px; /* Add space below the section */
 }
 
 .let1 .con {
@@ -190,6 +196,7 @@ footer {
 
     .let1 {
         padding: 40px 0;
+        margin-bottom: 50px; /* Adjust margin for larger screens */
     }
 
     .flex {
@@ -222,11 +229,11 @@ footer {
     .let1 {
         padding: 60px 0;
         min-height: 950px; /* Ensure the section is tall enough to fit the images */
+        margin-bottom: 60px; /* Increased margin */
     }
 
     .flex {
-        max-width: 108
-        0px;
+        max-width: 1080px;
         margin: 0 auto;
     }
 
