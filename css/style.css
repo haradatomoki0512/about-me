@@ -64,7 +64,8 @@ header ul li a:hover {
 .let1 {
     background-image: url(../images/datachef_unicolor.png);
     background-position: center bottom;
-    background-size: 100px;
+    background-size: cover; /* Ensure background image covers the container */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
     padding: 20px 0;
     color: #ffffff;
     position: relative;
@@ -164,7 +165,6 @@ footer {
 }
 
 /* Styles for Larger Screens */
-
 @media (min-width: 600px) {
     header .row {
         flex-direction: row;
@@ -262,7 +262,6 @@ footer {
 }
 
 /* Custom Styles to Enlarge the Image */
-
 .anime .enlarged {
     width: calc(100% + 200px); /* Increase width by 200px */
     margin-left: -100px; /* Center the image */
