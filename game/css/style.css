@@ -2,6 +2,11 @@
 
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 body {
@@ -12,21 +17,20 @@ body {
 
 header {
     font-weight: 700;
-    background: #f8f8f8; /* Adding a background color for better visibility */
+    background: #f8f8f8;
     padding: 10px 0;
-    text-align: center; /* Center the text in the header */
+    text-align: center;
 }
 
 header .con {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 10px;
 }
 
 header .row {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 header .logo {
@@ -36,7 +40,7 @@ header .logo {
 
 header ul {
     display: flex;
-    flex-direction: column; /* Stack items vertically on mobile */
+    flex-direction: column;
     padding: 0;
     list-style: none;
     margin: 0;
@@ -62,7 +66,7 @@ header ul li a:hover {
 }
 
 .supesu {
-    margin: 0 auto; /* Center the content */
+    margin: 0 auto;
 }
 
 .let1 {
@@ -73,24 +77,25 @@ header ul li a:hover {
     color: #ffffff;
     position: relative;
     min-height: 650px;
-    margin-bottom: 40px; /* Add space below the section */
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .let1 .con {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
+    width: 100%;
+    padding: 0 10px;
 }
 
 .flex {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .anime {
     width: 100%;
-    height: 650px; /* Match the height of the background */
+    height: 650px;
     position: relative;
     margin-bottom: 20px;
 }
@@ -147,6 +152,8 @@ header ul li a:hover {
 iframe {
     width: 100%;
     height: auto;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 footer {
@@ -162,6 +169,7 @@ footer {
 
 .info {
     width: 90%;
+    max-width: 500px;
     margin: auto;
     border-spacing: 0;
     font-size: 14px;
@@ -171,6 +179,22 @@ footer {
 .info td {
     border-bottom: 1px solid #c9c2bc;
     padding: 0.5rem;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
 }
 
 /* Styles for Larger Screens */
@@ -197,7 +221,7 @@ footer {
 
     .let1 {
         padding: 40px 0;
-        margin-bottom: 50px; /* Adjust margin for larger screens */
+        margin-bottom: 50px;
     }
 
     .flex {
@@ -206,8 +230,8 @@ footer {
     }
 
     .anime {
-        width: 60%; /* Adjusted for larger screens */
-        height: 650px; /* Match the height of the background */
+        width: 60%;
+        height: 650px;
     }
 
     .zurasu {
@@ -229,8 +253,8 @@ footer {
 
     .let1 {
         padding: 60px 0;
-        min-height: 950px; /* Ensure the section is tall enough to fit the images */
-        margin-bottom: 60px; /* Increased margin */
+        min-height: 950px;
+        margin-bottom: 60px;
     }
 
     .flex {
@@ -239,8 +263,8 @@ footer {
     }
 
     .anime {
-        width: 500px; /* Further adjusted for larger screens */
-        height: 950px; /* Match the height of the background */
+        width: 500px;
+        height: 950px;
     }
 
     .img {
