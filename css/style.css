@@ -1,21 +1,22 @@
 /* Base Styles (Mobile-First) */
-
 body {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* 横スクロールを防ぐ */
 }
 
 header {
     font-weight: 700;
-    background: #f8f8f8; /* Adding a background color for better visibility */
+    background: #f8f8f8;
     padding: 10px 0;
-    text-align: center; /* Center the text in the header */
+    text-align: center;
 }
 
 header .con {
     width: 90%;
     margin: 0 auto;
+    box-sizing: border-box; /* Ensure padding does not exceed the width */
 }
 
 header .row {
@@ -57,7 +58,7 @@ header ul li a:hover {
 }
 
 .supesu {
-    margin: 0 auto; /* Center the content */
+    margin: 0 auto;
 }
 
 .let1 {
@@ -68,35 +69,40 @@ header ul li a:hover {
     color: #ffffff;
     position: relative;
     min-height: 650px;
-    margin-bottom: 40px; /* Add space below the section */
+    margin-bottom: 40px;
+    box-sizing: border-box; /* Ensure padding does not exceed the width */
 }
 
 .let1 .con {
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    box-sizing: border-box; /* Ensure padding does not exceed the width */
 }
 
 .flex {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding does not exceed the width */
 }
 
 .anime {
     width: 100%;
-    height: auto; /* Adjust height to fit content */
+    max-width: 100%; /* Ensure the image does not exceed the container width */
     position: relative;
-    margin-bottom: 10px; /* Reduced margin to move up */
-    max-width: 80%; /* Adjusted to make image smaller */
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Ensure padding does not exceed the width */
 }
 
 .img {
-    position: relative; /* Changed from absolute */
-    margin: 0 auto; /* Center the image */
+    position: relative;
+    margin: 0 auto;
     width: 100%;
-    height: auto; /* Ensure images scale correctly */
-    max-width: 100%; /* Ensure images do not exceed container */
+    height: auto;
+    max-width: 100%;
+    box-sizing: border-box; /* Ensure padding does not exceed the width */
 }
 
 .img img {
@@ -130,6 +136,7 @@ header ul li a:hover {
 iframe {
     width: 100%;
     height: auto;
+    box-sizing: border-box; /* Ensure padding does not exceed the width */
 }
 
 footer {
@@ -159,7 +166,6 @@ footer {
 /* Styles for Larger Screens */
 
 @media (min-width: 600px) {
-
     header .row {
         flex-direction: row;
         justify-content: space-between;
@@ -175,7 +181,7 @@ footer {
 
     .let1 {
         padding: 40px 0;
-        margin-bottom: 50px; /* Adjust margin for larger screens */
+        margin-bottom: 50px;
     }
 
     .flex {
@@ -184,9 +190,8 @@ footer {
     }
 
     .anime {
-        width: 60%; /* Adjusted for larger screens */
-        height: auto; /* Ensure images scale correctly */
-        margin-bottom: 20px; /* Adjust margin */
+        width: 70%;
+        margin-bottom: 20px;
     }
 
     .zurasu {
@@ -205,11 +210,10 @@ footer {
 }
 
 @media (min-width: 1024px) {
-
     .let1 {
         padding: 60px 0;
-        min-height: 950px; /* Ensure the section is tall enough to fit the images */
-        margin-bottom: 60px; /* Increased margin */
+        min-height: 950px;
+        margin-bottom: 60px;
     }
 
     .flex {
@@ -218,9 +222,8 @@ footer {
     }
 
     .anime {
-        width: 50%; /* Further adjusted for larger screens */
-        height: auto; /* Ensure images scale correctly */
-        margin-bottom: 30px; /* Adjust margin */
+        width: 55%;
+        margin-bottom: 30px;
     }
 
     .midasi {
@@ -256,4 +259,11 @@ footer {
         max-width: 544px;
         font-size: 16px;
     }
+}
+
+/* Custom Styles to Enlarge the Image */
+
+.anime .enlarged {
+    width: calc(100% + 200px); /* Increase width by 200px */
+    margin-left: -100px; /* Center the image */
 }
